@@ -1,0 +1,25 @@
+.About{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #d4dde2;
+}
+
+.About .Content{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1a1a1a;
+    position: absolute;
+    top: 100px;
+}
+
+
+.About h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}

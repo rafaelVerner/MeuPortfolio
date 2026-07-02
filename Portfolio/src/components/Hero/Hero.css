@@ -1,9 +1,3 @@
-body{
-    margin: 0;
-    padding: 0; 
-    font-family: 'Poppins', sans-serif;
-}
-
 .Hero {
     background-image: url("../../assets/Background.png");
     background-position: center;
@@ -12,6 +6,7 @@ body{
     max-width: 100vw;
     height: 100vh;
     position: relative;
+    
 }
 
 .Overlay {
@@ -23,18 +18,18 @@ body{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.Content {
+.Hero .Content {
     position: absolute;
     top: 200px;
     left: 20px;
 
 }
 
-.Description {
+.Hero .Description {
     max-width: 50vw;
 }
 
-.Content a{
+.Hero .Content a{
     padding: 10px 20px;
     font-size: 1.2rem;
     background-color: #007bff;
@@ -45,12 +40,12 @@ body{
     transition: background-color 0.4s ease;
 }
 
-.Content a:hover {
+.Hero .Content a:hover {
     background-color: #0056b3;
     transition: background-color 0.4s ease;
 }
 
-.Buttons {
+.Hero .Buttons {
     display: flex;
     gap: 10px;
     margin-top: 20px;
@@ -58,7 +53,7 @@ body{
     padding: 10px;
 }
 
-Button {
+.Hero Button {
     display: inline-block;
     padding: 5px 5px;
     font-size: 1.2rem;
@@ -75,17 +70,17 @@ Button:hover {
     transition: background-color 0.4s ease;
 }
 
-h1{
+.Hero h1{
     font-size: 5rem;
     color: #fff;
 }
 
-h3{
+.Hero h3{
     font-size: 2rem;
     color: #fff;
 }
 
-h4{
+.Hero h4{
     font-size: 1.5rem;
     color: #fff;
 }
