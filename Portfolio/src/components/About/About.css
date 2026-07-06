@@ -1,6 +1,5 @@
 .About{
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background-color: #d4dde2;
     display: flex;
