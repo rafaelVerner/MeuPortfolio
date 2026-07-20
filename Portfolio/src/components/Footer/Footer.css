@@ -1,0 +1,25 @@
+footer{
+    background-color: #37323E;
+    min-width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+footer .Contatos{
+    background-color: #ffffffc7;
+    border-radius: 10px;
+    max-width: 70%;
+    padding: 10px;
+}
+
+footer .Redes{
+    background-color: #ffffffc7;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+footer a{
+    text-decoration: none;
+}

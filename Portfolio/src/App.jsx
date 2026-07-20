@@ -5,6 +5,7 @@ import { profileData } from './data/profile';
 import './App.css';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Footer />
     </div>
   )
 }

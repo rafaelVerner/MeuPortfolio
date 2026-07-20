@@ -1,7 +1,7 @@
 .Skills{
     min-height: 100vh;
     position: relative;
-    background-color: #363636;
+    background-color: #6D6A75;
     display: flex;
     flex-direction: column;
 }
@@ -9,7 +9,7 @@
 .Skills .Header h1{
     margin-top: 90px;
     font-size: 3rem;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 

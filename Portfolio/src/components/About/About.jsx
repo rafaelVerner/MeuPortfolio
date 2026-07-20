@@ -7,7 +7,7 @@ function About() {
             <div className="Card-Content">
                 <div className="Content">
                     <h1>Quem sou eu?</h1>
-                    <p>Sou um desenvolvedor full-stack com experiência em JavaScript, React ee Node.js.</p>
+                    <p>Sou um desenvolvedor full-stack com experiência em JavaScript, React e Node.js.</p>
                 </div>
             </div>
             <div className="Card-Image">

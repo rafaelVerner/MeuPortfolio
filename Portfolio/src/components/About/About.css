@@ -1,7 +1,7 @@
 .About{
     min-height: 100vh;
     position: relative;
-    background-color: #d4dde2;
+    background-color: #BFBDC1;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -14,7 +14,6 @@
     height: 75vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     background-color: #ffffffc7;
     border-radius: 10px;
     position: relative;
@@ -56,7 +55,24 @@
 }
 
 .About img{
-    width: 550px;
-    height: 650px;
+    max-width: 90%;
+    max-height: 90%;
     
+}
+
+
+@media  (max-width: 1080px) {
+    .About {
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+    }
+    .Card-Content{
+        max-height: 50vh;
+    }
+    
+
+    .Card-Content h1{
+        font-size: 2.5rem;
+    }
 }
