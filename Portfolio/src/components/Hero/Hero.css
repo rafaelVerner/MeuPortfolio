@@ -5,6 +5,9 @@
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     
 }
 
@@ -15,13 +18,16 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .Hero .Content {
-    position: absolute;
-    top: 200px;
-    left: 120px;
-
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 100px; */
+    z-index: 10;
 }
 
 .Hero .Description {
@@ -81,4 +87,17 @@ Button:hover {
 .Hero h4{
     font-size: 1.5rem;
     color: #fff;
+}
+
+@media (max-width: 1080px){
+    .Hero h1{
+        font-size: 2.5rem;
+    }
+    .Hero h3{
+        font-size: 1.5rem;
+    }
+    .Hero h4{
+        font-size: 1rem;
+    }
+
 }
