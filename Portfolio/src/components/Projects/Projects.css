@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: #EBEAEB;
 }
 
 .Projects .Header  h1{
@@ -19,9 +20,9 @@
 }
 
 .Projects .Project-Card{
-    border: 1px solid;
     width: 20vw;
     position: relative;
     padding: 10px;
     border-radius: 10px;
+    background-color: #DE9E36;
 }
