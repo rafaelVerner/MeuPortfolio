@@ -6,9 +6,8 @@
     min-height: 100vh;
     position: relative;
     display: flex;
-    justify-content: baseline;
     align-items: center;
-    
+    padding: 0 100px;
 }
 
 .Overlay {
@@ -23,10 +22,6 @@
 
 .Hero .Content {
     position: relative;
-    /* display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    padding-top: 100px; */
     z-index: 10;
 }
 
