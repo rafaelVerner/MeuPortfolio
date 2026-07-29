@@ -20,9 +20,48 @@
 }
 
 .Projects .Project-Card{
-    width: 20vw;
+    max-width: 500px;
+    width: 25vw;
+    height: 60vh;
     position: relative;
-    padding: 10px;
     border-radius: 10px;
     background-color: #DE9E36;
+    display: flex;
+    flex-direction: column;
 }
+
+.Projects .Project-Card .Card-Image{
+    height: 45%;
+}
+
+.Projects .Project-Card .Card-Image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.Projects .Card-Content{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.Projects .Project-Card .Card-Content .Title h1{
+    font-size: 1.4rem;
+}
+
+.Projects .Project-Card .Card-Content .Description p{
+    margin: 0;
+    line-clamp: 4;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.Projects .Project-Card .Card-Content .Tools{
+    display: flex;
+    gap: 20px;
+}
+

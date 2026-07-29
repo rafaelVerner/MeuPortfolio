@@ -11,17 +11,19 @@ function Projects() {
                 {ProjectsData.map((project, index) =>{
                         return(
                             <div className="Project-Card" key={index}>
-                                <div className="Card-Title">
-                                    <h1>{project.title}</h1>
-                                </div>
                                 <div className="Card-Image">
                                     <img src={project.image} alt="imagem do projeto" />
                                 </div>
-                                <div className="Card-Description">
-                                    <p>{project.description}</p>
-                                </div>
-                                <div className="Card-Tools">
-                                    <p>{project.tools}</p>
+                                <div className="Card-Content">
+                                    <div className="Title">
+                                        <h1>{project.title}</h1>
+                                    </div>
+                                    <div className="Description">
+                                        <p>{project.description}</p>
+                                    </div>
+                                    <div className="Tools">
+                                        <p>{project.tools}</p>
+                                    </div>
                                 </div>
                             </div>
                         );
