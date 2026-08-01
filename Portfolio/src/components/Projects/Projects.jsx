@@ -22,7 +22,21 @@ function Projects() {
                                         <p>{project.description}</p>
                                     </div>
                                     <div className="Tools">
-                                        <p>{project.tools}</p>
+                                       {project.tools.map((tool, index) => (
+                                            <div className="Tool" key={index}>
+                                                <p>{tool}</p>
+                                            </div>
+                                       ))}
+                                    </div>
+                                    <div className="Links">
+                                        {project.Links.map((link, index) => {
+                                            return (
+                                            <div className="Link" key={index}>  
+                                                <a href={link.url}>
+                                                    {link.name}
+                                                </a>
+                                            </div>);
+                                        })}
                                     </div>
                                 </div>
                             </div>

@@ -20,14 +20,15 @@
 }
 
 .Projects .Project-Card{
-    max-width: 500px;
+    max-width: 350px;
     width: 25vw;
-    height: 60vh;
+    height: 55vh;
     position: relative;
     border-radius: 10px;
     background-color: #DE9E36;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .Projects .Project-Card .Card-Image{
@@ -49,6 +50,7 @@
 
 .Projects .Project-Card .Card-Content .Title h1{
     font-size: 1.4rem;
+
 }
 
 .Projects .Project-Card .Card-Content .Description p{
@@ -63,5 +65,25 @@
 .Projects .Project-Card .Card-Content .Tools{
     display: flex;
     gap: 20px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.Projects  .Project-Card .Card-Content .Links{
+   display: flex;
+   gap: 20px; 
+}
+
+.Projects .Project-Card .Card-Content .Links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    background-color: #EBEAEB;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
