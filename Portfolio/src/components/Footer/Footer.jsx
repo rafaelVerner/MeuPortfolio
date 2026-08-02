@@ -4,6 +4,7 @@ function Footer(){
     return(
         <footer className="Footer">
             <div className="Contatos">
+                <h3>Contatos: </h3>
                 <p>Email:<a href="#">vernerrrferreira@gmail.com</a></p>
             </div>
             <div className="Redes">

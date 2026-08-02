@@ -20,8 +20,9 @@
 }
 
 .Projects .Project-Card{
-    max-width: 350px;
+    max-width: 300px;
     width: 25vw;
+    min-width: 240px;
     height: 55vh;
     position: relative;
     border-radius: 10px;
