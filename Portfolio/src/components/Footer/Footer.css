@@ -1,30 +1,51 @@
-/* footer{
+footer{
     background-color: #37323E;
+    color: #ffffffc7;
     min-width: 100%;
     min-height: 20vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 100px;
+    align-items: center;
 }
 
-footer .Contatos{
-    background-color: #ffffffc7;
-    border-radius: 10px;
-    max-width: 70%;
-    padding: 10px;
+footer .Info-Row{
+    display: flex;
+    gap: 150px;
+
 }
 
-footer .Redes{
-    background-color: #ffffffc7;
-    border-radius: 10px;
-    max-width: 70%;
+footer .Brand{
+
+}
+
+footer .Info-Row .Navigation{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .Info-Row .Contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .Copyright{
+  width: 96%;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #646464;
+
+  font-size:0.9rem;
 }
 
 footer a{
     text-decoration: none;
-} */
+    color: #ffffffc7;
+}
 
-.portfolio-footer-grid {
+/* .portfolio-footer-grid {
   background-color: #1a1a1a;
   color: #e0e0e0;
   padding: 60px 40px 20px;
@@ -62,4 +83,4 @@ footer a{
   padding-top: 20px;
   font-size: 0.85rem;
   color: #777;
-}
+} */

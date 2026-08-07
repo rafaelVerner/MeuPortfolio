@@ -3,27 +3,27 @@ import "./Footer.css"
 function Footer(){
     return(
         <footer className="Footer">
-            <div className="Info-Rows">
+            <div className="Info-Row">
                 <div className="Brand">
                     <h3>Verner Rafael</h3>
                     <p>Desenvolvedor Front-end focado em criar experiências digitais incríveis.</p>
                 </div>
-                <div className="Navgagtion">
+                <div className="Navigation">
                     <h3>Navegação</h3>
                     <a href="">Inicio</a>
                     <a href="">Sobre</a>
                     <a href="">Habilidades</a>
                     <a href="">Projetos</a>
                 </div>
-                <div className="Contatos">
+                <div className="Contacts">
                     <h3>Contatos: </h3>
-                    <p>Email:<a href="#">vernerrrferreira@gmail.com</a></p>
-                    <p>GitHub: <a href="#">link do git aqui</a></p>
-                    <p>Linkedin: <a href="#">link do Linkedin aqui</a></p>
+                    <a href="#">Gmail</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Linkedin</a>
                 </div>
             </div>
             <div className="Copyright">
-                <p>&copy; 2026 Verner Rafael. Criado com HTML & CSS.</p>
+                <p>&copy; 2026 Verner Rafael. Criado com HTML, CSS & JavaScript.</p>
             </div>
         </footer>
         // <footer class="portfolio-footer-grid">

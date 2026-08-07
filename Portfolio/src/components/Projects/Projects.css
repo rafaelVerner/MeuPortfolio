@@ -23,6 +23,7 @@
     max-width: 300px;
     width: 25vw;
     min-width: 240px;
+    min-height: 500px;
     height: 55vh;
     position: relative;
     border-radius: 10px;
