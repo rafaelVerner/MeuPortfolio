@@ -10,26 +10,19 @@ footer{
 }
 
 footer .Info-Row{
+    max-width: 1100px;
+    margin-top: 20px;
     display: flex;
     gap: 150px;
 
 }
 
-footer .Brand{
-
-}
-
-footer .Info-Row .Navigation{
+footer .Info-Row .Navigation,  .Contacts{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-footer .Info-Row .Contacts{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
 footer .Copyright{
   width: 96%;

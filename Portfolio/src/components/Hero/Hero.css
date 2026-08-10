@@ -32,16 +32,16 @@
 .Hero .Content a{
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: #007bff;
-    color: white;
+    background-color: #DEB841;
+    color: #EBEAEB;
     border: none;
-    border-radius: 5px; 
+    border-radius: 50px; 
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
 
 .Hero .Content a:hover {
-    background-color: #0056b3;
+    background-color: #DEAB3C;
     transition: background-color 0.4s ease;
 }
 
@@ -52,22 +52,6 @@
     padding: 10px;
 }
 
-.Hero Button {
-    display: inline-block;
-    padding: 5px 5px;
-    font-size: 1.2rem;
-    background-color: #ffd102;
-    color: black;
-    transition: background-color 0.4s ease;
-    border: 1px solid #000;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-Button:hover {
-    background-color: #bda001;
-    transition: background-color 0.4s ease;
-}
 
 .Hero h1{
     font-size: 5rem;

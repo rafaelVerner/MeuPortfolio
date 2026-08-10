@@ -1,20 +1,19 @@
 import './Hero.css';
-import Button from '../Buttons/Button';
 
-function Hero({Nome, Profissao, Descricao}) {
+function Hero({Profile}) {
     return (
-        <div className="Hero">
+        <div className="Hero" id="Hero">
             <div className="Overlay"></div>
             <div className="Content">
                 <div className="Description">
-                    <h1>{Nome}</h1>
-                    <h3>{Profissao}</h3>
-                    <h4>{Descricao }</h4>
+                    <h1>{Profile.nome}</h1>
+                    <h3>{Profile.profissao}</h3>
+                    <h4>{Profile.descricao}</h4>
                 </div>
                 <div className="Buttons">
                     <a href="">GitHub</a>
                     <a href="">LinkedIn</a>
-                    <Button text="Baixar Currículo" onClick={() => {}} />
+                    <a href="">Baixar Currículo</a>
                 </div>
             </div>
         </div>

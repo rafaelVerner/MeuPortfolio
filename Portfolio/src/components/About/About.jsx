@@ -3,7 +3,7 @@ import catImage from '../../assets/cat.png';
 
 function About() {
     return(
-        <div className="About">
+        <div className="About" id="About">
             <div className="Card-Content">
                 <div className="Content">
                     <h1>Quem sou eu?</h1>

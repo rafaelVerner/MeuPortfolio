@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero Nome={profileData.nome} Profissao={profileData.profissao} Descricao={profileData.descricao} />
+      <Hero  Profile={profileData} />
       <About />
-      <Skills />
+      <Skills  />
       <Projects />
       <Footer />
     </div>

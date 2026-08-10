@@ -4,7 +4,7 @@ import { skillsData } from "../../data/skills";
 
 function Skills() {
     return (
-        <div className="Skills">
+        <div className="Skills" id="Skills">
             <div className="Header">
                 <h1>Habilidades</h1>
             </div>
