@@ -10,36 +10,44 @@
 }
 
 .About .Card-Content{
+    display: flex;
+    flex-direction: column;
+}
+
+.About .infoBlock{
     width: 35vw;
-    height: 75vh;
     display: flex;
     flex-direction: column;
     background-color: #ffffffc7;
     border-radius: 10px;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.About .Content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: #1a1a1a;
     
 }
 
-.About .Card-Content p{
-    font-size: 1.5rem;
-    text-align: justify;
-    max-width: 95%;
-    line-height: 1.2;
+.About .infoBlock h3{
+    margin: 0;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
 }
 
+.About .infoBlock p{
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
 
 .About .Card-Content h1{
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: bold;
+    text-align: center;
     color: #1a1a1a;
+    background-color: #ffffffc7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .About .Card-Image{
@@ -56,7 +64,6 @@
 .About img{
     max-width: 90%;
     max-height: 90%;
-    
 }
 
 @media (max-width: 1080px){
