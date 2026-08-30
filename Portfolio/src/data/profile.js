@@ -1,10 +1,10 @@
 export const profileData = {
     nome: "Verner Rafael",
     profissao: "Desenvolvedor de Sistemas",
-    descricao: "Desenvolvendo aplicações web modernas com foco em Front-end, Back-end e Engenharia de Software.",
+    descricao: "Desenvolvendo aplicações web modernas com foco em usuabilidade e eficiência.",
     sobre: {
         title: "Sobre mim",
-        content: "\t Sou um desenvolvedor de sistemas em busca de aprimorar minhas habilidades e aprender mais. Tenho conhecimento em diversas ferramentas de programação desde desenvolvimento web a banco de dados. Gosto do desafio de criar softwares e solucionar problemas computacionais."
+        content: "Sou um desenvolvedor de sistemas em busca de aprimorar minhas habilidades e aprender mais sobre o unioverso da tecnologia. Tenho conhecimento em diversas ferramentas de programação desde desenvolvimento web a banco de dados. Gosto do desafio de criar softwares e solucionar problemas computacionais."
     },
     experiencia:{
         title: "Experiência",
