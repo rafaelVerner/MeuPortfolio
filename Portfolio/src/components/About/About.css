@@ -14,7 +14,7 @@
     flex-direction: column;
 }
 
-.About .infoBlock{
+.About .Card-Content .Info-Block{
     width: 35vw;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
     
 }
 
-.About .infoBlock h3{
+.About .Card-Content .Info-Block h3{
     margin: 0;
     padding: 10px;
     font-size: 1.6rem;
@@ -33,11 +33,12 @@
     text-align: center;
 }
 
-.About .infoBlock p{
+.About .Info-Block p{
     margin: 0;
     padding: 10px 20px;
     font-size: 1.2rem;
     text-align: justify;
+    text-indent: 30px;
 }
 
 .About .Card-Content h1{
@@ -47,23 +48,23 @@
     color: #1a1a1a;
     background-color: #ffffffc7;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .About .Card-Image{
-    width: 35vw;
+    width: 40vw;
     height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffffc7;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .About img{
-    max-width: 90%;
+    padding: 20px;
     max-height: 90%;
+    background-color: #ffffffc7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1080px){

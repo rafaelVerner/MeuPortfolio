@@ -4,15 +4,15 @@ export const profileData = {
     descricao: "Desenvolvendo aplicações web modernas com foco em Front-end, Back-end e Engenharia de Software.",
     sobre: {
         title: "Sobre mim",
-        content: "Sou um desenvolvedor de sistemas apaixonado por criar soluções inovadoras e eficientes. Com experiência em desenvolvimento web, estou sempre em busca de aprimorar minhas habilidades e aprender novas tecnologias. Meu objetivo é contribuir para projetos desafiadores e impactantes, entregando resultados de alta qualidade."
+        content: "\t Sou um desenvolvedor de sistemas em busca de aprimorar minhas habilidades e aprender mais. Tenho conhecimento em diversas ferramentas de programação desde desenvolvimento web a banco de dados. Gosto do desafio de criar softwares e solucionar problemas computacionais."
     },
     experiencia:{
         title: "Experiência",
         content: [
             {
-                empresa: "Empresa A",
-                cargo: "Desenvolvedor Júnior",
-                periodo: "Jan 2020 - Presente"
+                empresa: "Microbot",
+                cargo: "Instrutor/Monitor",
+                periodo: "Jan 2026 - Presente"
             }
         ]
     },
