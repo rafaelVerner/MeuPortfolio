@@ -10,10 +10,10 @@ function Footer(){
                 </div>
                 <div className="Navigation">
                     <h3>Navegação</h3>
-                    <a href="">Inicio</a>
-                    <a href="">Sobre</a>
-                    <a href="">Habilidades</a>
-                    <a href="">Projetos</a>
+                    <a href="#Hero">Inicio</a>
+                    <a href="#About">Sobre</a>
+                    <a href="#Skills">Habilidades</a>
+                    <a href="#Projects">Projetos</a>
                 </div>
                 <div className="Contacts">
                     <h3>Contatos</h3>
