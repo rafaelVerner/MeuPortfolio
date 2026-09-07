@@ -1,6 +1,6 @@
 import './Skills.css';
 import { skillsData } from "../../data/skills";
-
+import { FaStar, FaRegStar } from "react-icons/fa";
 
 function Skills() {
     return (
@@ -18,11 +18,26 @@ function Skills() {
                         <div className="Card-Content">
                                 {skillData.list.map((skill, index)=>{
                                     const IconComponent = skill.icon;
+                                    const stars = [];
+                                    for (let i =0; i < 5; i++){
+                                        if (i < skill.nivel) {
+                                            stars.push(<FaStar key={i} className="filled-star" />);
+                                        }else{
+                                            stars.push(<FaRegStar key={i} className="empty-star" />);
+                                            console.log("nivel", skill.nivel)
+                                        }
+                                    }
                                     return (
                                         <div className="Skill-Card" key={index}>
-                                            <div className="Skill-Icon">{IconComponent && <IconComponent />}</div>
-                                            <div className="Skill-Name">{skill.name}</div>
-                                            <div className="Skill-Level">{skill.nivel}</div>
+                                            <div className="Card-Header">
+                                                <div className="Skill-Icon">{IconComponent && <IconComponent />}</div>
+                                                <div className="Skill-Name">{skill.name}</div>
+                                            </div>
+                                            <div className="Skill-Level">
+                                                {stars.map((star, index) => (
+                                                    <span key={index}>{star}</span>
+                                                ))}
+                                            </div>
                                         </div>
                                     );
                                 })}

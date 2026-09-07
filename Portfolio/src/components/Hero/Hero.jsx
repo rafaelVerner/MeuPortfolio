@@ -7,8 +7,7 @@ function Hero({Profile}) {
             <div className="Content">
                 <div className="Description">
                     <h1>{Profile.nome}</h1>
-                    <h3>{Profile.profissao}</h3>
-                    <h4>{Profile.descricao}</h4>
+                    <h3>{Profile.descricao}</h3>
                 </div>
                 <div className="Buttons">
                     <a href="">GitHub</a>

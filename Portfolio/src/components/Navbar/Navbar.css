@@ -24,7 +24,7 @@
 .Navbar a{
     padding: 10px 20px;
     text-decoration: none;
-    background-color: #DEB841;
+    background-color: #DEAB3C;
     color: white;
     border-radius: 50px;
     transition: background-color 0.4s ease;
@@ -32,6 +32,6 @@
 }
 
 .Navbar a:hover {
-    background-color: #DEAB3C;
+    background-color: #DE9E36;
     transition: background-color 0.4s ease;
 }

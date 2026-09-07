@@ -1,4 +1,4 @@
-import {FaHtml5, FaCss3, FaJs, FaReact, FaPhp, FaNodeJs, FaServer, FaPython } from "react-icons/fa";
+import {FaHtml5, FaCss3, FaJs, FaReact, FaPhp, FaNodeJs, FaServer, FaPython, FaMobileAlt } from "react-icons/fa";
 
 export const skillsData = [
     {   type: "Web", 
@@ -7,9 +7,8 @@ export const skillsData = [
             {name: "CSS", icon: FaCss3, nivel: 5}, 
             {name: "JavaScript", icon: FaJs, nivel: 5}, 
             {name: "PHP", icon: FaPhp, nivel: 4}, 
-            {name: "React", icon: FaReact, nivel: 3}, 
-            {name: "Node.js", icon: FaNodeJs, nivel: 3}, 
-            {name: "Express.js", icon: FaJs, nivel: 3}
+            {name: "React", icon: FaReact, nivel: 4}, 
+            {name: "Node.js", icon: FaNodeJs, nivel: 4}, 
         ]
     },
     {   type: "Data Science", 
@@ -21,14 +20,14 @@ export const skillsData = [
     },
     {   type: "Database", 
         list: [
-            {name: "MongoDB", icon: FaServer, nivel: 5},
-            {name: "MySQL", icon: FaServer, nivel: 5}
+            {name: "MongoDB", icon: FaServer, nivel: 4},
+            {name: "MySQL", icon: FaServer, nivel: 4}
         ]
     },
     {   type: "Mobile", 
         list: [
-            {name: "Dart", icon: null, nivel: 4},
-            {name: "Flutter", icon: null, nivel: 4}
+            {name: "Dart", icon: FaMobileAlt, nivel: 4},
+            {name: "Flutter", icon: FaMobileAlt, nivel: 4}
         ]
     },
 ]
