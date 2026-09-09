@@ -12,7 +12,7 @@ function Skills() {
                 {skillsData.map((skillData, index)=>{
                     return (
                     <div className="Skills-List" key={index}>
-                        <div className= "list-Header">
+                        <div className= "List-Header">
                             <h1>{skillData.type}</h1>
                         </div>
                         <div className="Card-Content">
