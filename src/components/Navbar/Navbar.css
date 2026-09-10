@@ -21,14 +21,13 @@
 .Navbar a{
     padding: 10px 20px;
     text-decoration: none;
-    background-color: #DEAB3C;
+    border-bottom: 3px solid #DEAB3C;
     color: white;
-    border-radius: 50px;
     transition: background-color 0.4s ease;
-    
 }
 
 .Navbar a:hover {
-    background-color: #DE9E36;
+    background-color: #DEAB3C;
     transition: background-color 0.4s ease;
 }
+

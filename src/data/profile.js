@@ -4,7 +4,7 @@ export const profileData = {
     descricao: "Desenvolvendo aplicações web modernas com foco em usuabilidade e eficiência.",
     sobre: {
         title: "Sobre mim",
-        content: "Sou um desenvolvedor de sistemas em busca de aprimorar minhas habilidades e aprender mais sobre o unioverso da tecnologia. Tenho conhecimento em diversas ferramentas de programação desde desenvolvimento web a banco de dados. Gosto do desafio de criar softwares e solucionar problemas computacionais."
+        content: "Sou um desenvolvedor de sistemas que gosta do desafio de criar soluções inovadoras e está em busca de aprimorar minhas habilidades e aprender mais sobre o universo da programação. Tenho conhecimento em diversas ferramentas de programação desde desenvolvimento web, com JavaScript, HTML e CSS, até banco de dados com MongoDB e MySQL."
     },
     experiencia:{
         title: "Experiência",
