@@ -12,14 +12,18 @@ function App() {
   const [isSelected, setIsSelected] = useState("");
 
   const scrollHandle = () => {
-    const valorY = window.scrollY; 
-    if(valorY < 933){
+    const valorY = window.scrollY;
+    let heroTop = document.getElementById("Hero").getBoundingClientRect().top;
+    let aboutTop = document.getElementById("About").getBoundingClientRect().top;
+    let skillsTop = document.getElementById("Skills").getBoundingClientRect().top;
+    let projectsTop = document.getElementById("Projects").getBoundingClientRect().top;
+    if(Math.ceil(valorY)  <= Math.ceil(valorY + heroTop)){
       setIsSelected("Hero");
-    }else if(valorY >= 933 && valorY < 1866){
+    }else if(Math.ceil(valorY) <= Math.ceil(aboutTop + valorY)){
       setIsSelected("About");
-    }else if(valorY >= 1866 && valorY < 2799){
+    }else if(Math.ceil(valorY ) <= Math.ceil(skillsTop + valorY)){
       setIsSelected("Skills");
-    }else if(valorY >= 2799){
+    }else if(Math.ceil(valorY ) <= Math.ceil(projectsTop + valorY)){
       setIsSelected("Projects");
     }
   }

@@ -24,7 +24,6 @@ function Skills() {
                                             stars.push(<FaStar key={i} className="filled-star" />);
                                         }else{
                                             stars.push(<FaRegStar key={i} className="empty-star" />);
-                                            console.log("nivel", skill.nivel)
                                         }
                                     }
                                     return (
