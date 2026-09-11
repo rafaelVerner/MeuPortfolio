@@ -17,13 +17,14 @@ function App() {
     let aboutTop = document.getElementById("About").getBoundingClientRect().top;
     let skillsTop = document.getElementById("Skills").getBoundingClientRect().top;
     let projectsTop = document.getElementById("Projects").getBoundingClientRect().top;
-    if(Math.ceil(valorY)  <= Math.ceil(valorY + heroTop)){
+
+    if(valorY <= valorY + heroTop){
       setIsSelected("Hero");
-    }else if(Math.ceil(valorY) <= Math.ceil(aboutTop + valorY)){
+    }else if(valorY <= aboutTop + valorY){
       setIsSelected("About");
-    }else if(Math.ceil(valorY ) <= Math.ceil(skillsTop + valorY)){
+    }else if(valorY <= skillsTop + valorY){
       setIsSelected("Skills");
-    }else if(Math.ceil(valorY ) <= Math.ceil(projectsTop + valorY)){
+    }else if(valorY <= projectsTop + valorY){
       setIsSelected("Projects");
     }
   }
