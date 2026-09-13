@@ -1,12 +1,17 @@
 import './About.css';
-import myImage from '../../assets/Verner.jpeg';
+import myImage from '../../assets/Verner2.jpeg';
 import { profileData } from '../../data/profile.js';
 
 function About() {
     return(
         <div className="About" id="About">
+            <div className="Card-Image">
+                <img src={myImage} alt="Minha imagem segurando um robozinho." />
+            </div>
             <div className="Card-Content">
-                <h1>Quem sou eu</h1>
+                <div className="Card-Header">
+                     <h1>Quem sou eu</h1>
+                </div>
                 <div className="Sobre">
                     <p>{profileData.sobre.content}</p>
                 </div>
@@ -45,9 +50,7 @@ function About() {
                     </div>
                 </div>
             </div>
-            <div className="Card-Image">
-                <img src={myImage} alt="Minha imagem segurando um robozinho." />
-            </div>
+            
         </div>
     );
 
