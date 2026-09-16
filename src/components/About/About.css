@@ -9,11 +9,26 @@
     gap: 100px;
 }
 
+.About .Card-Image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.About img{
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    /* border: 4px solid #DEAB3C; */
+}
+
 .About .Card-Content{
-    width: 35vw;
-    max-width: 35vw;
+    width: 50%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .About .Card-Content .Card-Header h1{
@@ -21,32 +36,15 @@
     font-weight: bold;
     text-align: center;
     color: #37323E;
-    border-bottom: 4px solid #37323E;
+    border-bottom: 4px solid #DEAB3C;
 }
 
-.About .Card-Image{
-    width: 50%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.About img{
-    padding: 10px;
-    width: 70%;
-    height: 50%;
-    background-color: #ffffffc7;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
 .About .Card-Content .Sobre{
     width: 35vw;
     display: flex;
     flex-direction: column;
     background-color: #ffffffc7;
-    border-radius: 20px;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -60,40 +58,54 @@
     text-indent: 30px;
 }
 
-.About .Experiencias .Exp-Cards{
+.About .Experiencias{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 10%;
+    align-items: center;
+    flex-direction: column;
+}
+.About .Experiencias h3{
+    font-size: 2rem;
+    color: #37323E;
+    padding: 10px 00;
 }
 
-.About .Experiencias h3{
-    font-size: 1.6rem;
-    color: #fff;
-    width: 35vw;
-    padding: 10px 00;
+
+.About .Experiencias .Exp-Cards{
     display: flex;
-    flex-direction:  column;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #6D6A75;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    gap: 10%;
+    position: relative;
+}
+
+.About .Experiencias .Exp-Cards::before{
+    content: "";
+    background-color: #37323E;
+    width: 3px;
+    height: 100%;
+    position: absolute;
 }
 
 .About .Experiencias .Exp-Content{
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
     gap: 20px;
-    background-color: #DEAB3C;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    position: relative;
 }
 
-.About .Experiencias .Exp-Content p{
-    margin: 0;
-    text-indent: 30px;
+.About .Experiencias .Exp-Content p, .About .Experiencias .Exp-Content h4{
+    margin: 0; 
+}
+
+.About .Experiencias .Exp-Content h4{
+    font-size: 1.5rem;
+    color: #37323E;
+}
+
+.About .Experiencias .Exp-Content::before{
+    background-color: #37323E;
+    width: 4px;
+    height: 100%;
 }
 
 .About .Formacao .For-Cards{
@@ -101,18 +113,16 @@
     gap: 10%;
 }
 
-.About .Formacao h3{
-    font-size: 1.6rem;
-    color: white;
-    width: 35vw;
-    padding: 10px 00;
+.About .Formacao .For-Header{
     display: flex;
-    flex-direction:  column;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #6D6A75;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    justify-content: center;
+    
+}
+.About .Formacao h3{
+    font-size: 2rem;
+    color: #37323E;
+    padding: 10px 00;
+
 }
 
 .About .Formacao .For-Content{
@@ -137,6 +147,11 @@
     .About{
         flex-direction: column;
         padding: 10px;
+    }
+    .About .Card-Image{
+        margin-top: 90px;
+        width: 80%;
+        height: 100%;
     }
     .Exp-Content {
         min-width: 100%;

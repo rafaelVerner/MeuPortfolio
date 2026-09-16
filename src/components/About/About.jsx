@@ -16,14 +16,16 @@ function About() {
                     <p>{profileData.sobre.content}</p>
                 </div>
                 <div className="Experiencias">
-                    <h3>{profileData.experiencia.title}</h3>
+                    <div className="Exp-Header">
+                        <h3>{profileData.experiencia.title}</h3>
+                    </div>
                     <div className="Exp-Cards">
                         {profileData.experiencia.content.map((exp, index)=>{
                                 return(
                                     <div className='Exp-Content'  key={index}>
-                                        <p><b>Empresa: </b>{exp.empresa}</p>
-                                        <p><b>Cargo: </b>{exp.cargo}</p>
-                                        <p><b>Período: </b>{exp.periodo}</p>
+                                        <h4>{exp.empresa}</h4>
+                                        <p>{exp.cargo}</p>
+                                        <p>{exp.periodo}</p>
                                     </div>
                                 );
 
@@ -34,7 +36,9 @@ function About() {
 
                 </div>
                 <div className="Formacao">
-                    <h3>{profileData.formacao.title}</h3>
+                    <div className="For-Header">
+                        <h3>{profileData.formacao.title}</h3>
+                    </div>
                     <div className="For-Cards">
                         {profileData.formacao.content.map((item, index)=>{
                                     return(
