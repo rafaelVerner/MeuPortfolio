@@ -5,9 +5,6 @@ import { profileData } from '../../data/profile.js';
 function About() {
     return(
         <div className="About" id="About">
-            <div className="Card-Image">
-                <img src={myImage} alt="Minha imagem segurando um robozinho." />
-            </div>
             <div className="Card-Content">
                 <div className="Card-Header">
                      <h1>Quem sou eu</h1>
@@ -22,7 +19,7 @@ function About() {
                     <div className="Exp-Cards">
                         {profileData.experiencia.content.map((exp, index)=>{
                                 return(
-                                    <div className='Exp-Content'  key={index}>
+                                    <div className="Exp-Content"  key={index}>
                                         <h4>{exp.empresa}</h4>
                                         <p>{exp.cargo}</p>
                                         <p>{exp.periodo}</p>
@@ -43,9 +40,9 @@ function About() {
                         {profileData.formacao.content.map((item, index)=>{
                                     return(
                                         <div className='For-Content'  key={index}>
-                                            <p><b>Instituição: </b>{item.intituicao}</p>
-                                            <p><b>Curso: </b>{item.curso}</p>
-                                            <p><b>Período: </b>{item.periodo}</p>
+                                            <h4>{item.curso}</h4>
+                                            <p>{item.intituicao}</p>
+                                            <p>{item.periodo}</p>
                                         </div>
                                     );
                                 }
@@ -54,7 +51,9 @@ function About() {
                     </div>
                 </div>
             </div>
-            
+            <div className="Card-Image">
+                <img src={myImage} alt="Minha imagem segurando um robozinho." />
+            </div>
         </div>
     );
 

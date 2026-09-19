@@ -42,3 +42,9 @@ footer a{
     color: #ffffffc7;
 }
 
+@media (max-width: 1080px){
+  footer .Info-Row{
+    gap: 20px;
+    flex-direction: column;
+  }
+}

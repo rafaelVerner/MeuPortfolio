@@ -4,7 +4,7 @@ export const profileData = {
     descricao: "Desenvolvendo aplicações web modernas com foco em usuabilidade e eficiência.",
     sobre: {
         title: "Sobre mim",
-        content: "Sou um desenvolvedor de sistemas que gosta do desafio de criar soluções inovadoras e está em busca de aprimorar minhas habilidades e aprender mais sobre o universo da programação. Tenho conhecimento em diversas ferramentas de programação desde desenvolvimento web, com JavaScript, HTML e CSS, até banco de dados com MongoDB e MySQL."
+        content: "\tOlá, meu nome é Verner Rafael. \n\nSou um desenvolvedor que gosta do desafio de escrever código e criar projetos de software.\n\nEstou sempre em busca de aprimorar minhas habilidades e aprender mais sobre o universo da programação. Atualmente tenho como foco o estudos em tecnologias web, como React e Node.js.\n\nAlém disso, tenho interesse em outras áreas da tecnologia, como inteligência artificial, redes de computadores, desenvolvimento de jogos e cybersegurança.\n\nAqui estáo outras ferramentas que também utilizo para desenvolver projetos: \n\n"
     },
     experiencia:{
         title: "Experiência",
