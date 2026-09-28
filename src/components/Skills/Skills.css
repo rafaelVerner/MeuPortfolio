@@ -1,105 +1,116 @@
 .Skills{
     min-height: 100vh;
+
     position: relative;
     background-color: #37323E;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .Skills .Header{
     margin-top: 90px;
-    background-color: #ffffffc7;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .Skills .Header h1{
     margin: 0 50px;
-    font-size: 3rem;
-    color: #000;
-    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #EBEAEB;
+    border-bottom: 4px solid #DEAB3C;
+}
+
+.Containers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .Skills-Container{
-    width: 100%;
+    width: 50%;
     min-height: 100%;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    gap: 50px;
 }   
 
-.Skills-List{
-    width: 23%;
+.Skill-Button{
+    margin-top: 60px;
+    padding: 10px 0;
+    background-color: transparent;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    gap: 20px;
-    position: relative;
+    align-self: center;
+    border: none;
+    border-bottom: 4px solid #DEAB3C;
+    transition: background-color 0.4s ease;
 }
 
-.Skills-List h1{
-    font-size: 2.3rem;
-    color: #000;
+.Skill-Button:hover{
+    background-color: #DEAB3C;
+    transition: background-color 0.4s ease;
+}
+
+.Skill-Button h1{
+    font-size: 2.5rem;
     text-align: center;
-    background-color: #ffffffc7;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 5px 0;
+    font-weight: bold;
+    color: #EBEAEB;
+    margin: 0;
 }
 
-.Skills-List .Card-Content{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
-}
-
-.Skill-Card{
-    width: 45%;
+.List-Container{
+    width: 50%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    background-color: #ffffffc7;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
-.Skill-Card:hover{
-    transform: scale(1.10);
-    transition: transform 0.1s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.Card-Header{
+.List-Container .Item-List{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-
-.Skills-List .Skill-Icon{
-    font-size: 2rem;
-    color: #DE9E36;
-
+.Item-List .Item-Card{
+    width: 45%;
+    color: #EBEAEB;
+    font-size: 1.8rem;
+    display: flex;
+    position: relative;
+    animation: appear 1s ;
 }
 
-.Skills-List .Skill-Name{
-    font-size: 1.5rem;
-    color: #000000;
-   
+.Item-List .Item-Card::before{
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: #EBEAEB;
+    position: absolute;
+    left: -15px;
 }
 
-.Skills-List .Skill-Level{
-    font-size: 1.5rem;
-    text-align: center;
-    color: #DEAB3C;
-    
+.Item-List .Card-Row h3, .Item-List .Card-Row h4{   
+    margin: 0;
+    padding: 0;
 }
 
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media (max-width: 1080px){
     .Skills .Header{
@@ -117,9 +128,5 @@
         padding-bottom: 50px;
         margin-top: 10px;
     }
-    .Skill-Card{
-        margin: 10px 0 ;
-        width: 100%;
 
-    }
 }

@@ -1,9 +1,7 @@
 import "./Navbar.css";
-// import { useState } from "react";
+
 
 function Navbar({isSelected}) {
-    // const [isSelected, setIsSelected] = useState({isActive});
-    console.log(isSelected);
     return(
         <nav className="Navbar">
             <div className="Links">

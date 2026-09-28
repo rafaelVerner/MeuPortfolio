@@ -1,51 +1,57 @@
 import './Skills.css';
 import { skillsData } from "../../data/skills";
 import { FaStar, FaRegStar } from "react-icons/fa";
+import { useState } from 'react';
 
 function Skills() {
+    const [isSelected, setIsSelected] =  useState("");
+    const lista = skillsData.find((skills) => skills.type === isSelected)
     return (
         <div className="Skills" id="Skills">
             <div className="Header">
                 <h1>Habilidades</h1>
             </div>
-            <div className="Skills-Container">
-                {skillsData.map((skillData, index)=>{
-                    return (
-                    <div className="Skills-List" key={index}>
-                        <div className= "List-Header">
-                            <h1>{skillData.type}</h1>
-                        </div>
-                        <div className="Card-Content">
-                                {skillData.list.map((skill, index)=>{
-                                    const IconComponent = skill.icon;
+            <div className='Containers'>
+                <div className="Skills-Container">
+                    {skillsData.map((skillData, index) => {
+                        return (
+                            <button className='Skill-Button' key={index} onClick={()=>{setIsSelected(skillData.type)}} style={isSelected === skillData.type ?  { backgroundColor: "#DEAB3C" } : {}}>
+                                <h1>{skillData.type}</h1>
+                            </button>
+                        )
+                    })}
+                </div>
+                <div className="List-Container">
+                    {lista  && 
+                        <div className='Item-List'>
+                            {
+                                lista.list.map((item, index) =>{
+                                    const ItemIcon = item.icon
                                     const stars = [];
                                     for (let i =0; i < 5; i++){
-                                        if (i < skill.nivel) {
+                                        if (i < item.nivel) {
                                             stars.push(<FaStar key={i} className="filled-star" />);
                                         }else{
                                             stars.push(<FaRegStar key={i} className="empty-star" />);
                                         }
                                     }
-                                    return (
-                                        <div className="Skill-Card" key={index}>
-                                            <div className="Card-Header">
-                                                <div className="Skill-Icon">{IconComponent && <IconComponent />}</div>
-                                                <div className="Skill-Name">{skill.name}</div>
-                                            </div>
-                                            <div className="Skill-Level">
-                                                {stars.map((star, index) => (
-                                                    <span key={index}>{star}</span>
-                                                ))}
+                                    return(
+                                        <div className='Item-Card' key={item.name}>
+                                            <div className='Card-Row'>
+                                                <h3>{item.name}  {ItemIcon && <ItemIcon/>}</h3>
+                                                <h4>{stars}</h4>
                                             </div>
                                         </div>
-                                    );
-                                })}
+                                    )
+                                })
+                            }
                         </div>
-                    </div>)
-                })}
+                    }
+                   
+                </div>
             </div>
         </div>
     );
-}   
+}
 
 export default Skills;
