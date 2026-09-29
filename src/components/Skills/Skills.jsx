@@ -28,6 +28,7 @@ function Skills() {
                                 lista.list.map((item, index) =>{
                                     const ItemIcon = item.icon
                                     const stars = [];
+                                    const delay = (index * 0.3) + "s";
                                     for (let i =0; i < 5; i++){
                                         if (i < item.nivel) {
                                             stars.push(<FaStar key={i} className="filled-star" />);
@@ -36,7 +37,7 @@ function Skills() {
                                         }
                                     }
                                     return(
-                                        <div className='Item-Card' key={item.name}>
+                                        <div className='Item-Card' key={item.name} style={{animationDelay: delay}}>
                                             <div className='Card-Row'>
                                                 <h3>{item.name}  {ItemIcon && <ItemIcon/>}</h3>
                                                 <h4>{stars}</h4>
