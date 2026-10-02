@@ -1,6 +1,7 @@
 import "./Projects.css";
 import { ProjectsData } from "../../data/projects.js";
 
+
 function Projects() {
     return (
         <div className="Projects" id="Projects">
@@ -20,6 +21,7 @@ function Projects() {
                                     </div>
                                     <div className="Description">
                                         <p>{project.description}</p>
+                                        
                                     </div>
                                     <div className="Tools">
                                        {project.tools.map((tool, index) => (
@@ -32,7 +34,7 @@ function Projects() {
                                         {project.Links.map((link, index) => {
                                             return (
                                             <div className="Link" key={index}>  
-                                                <a href={link.url}>
+                                                <a href={link.url} target={"_parent"}>
                                                     {link.name}
                                                 </a>
                                             </div>);

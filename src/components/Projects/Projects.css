@@ -13,7 +13,7 @@
     margin-top: 90px;
     color: #37323E;
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     border-bottom: 4px solid #DEAB3C;
 }
 
@@ -28,37 +28,36 @@
 }
 
 .Projects .Project-Card{
-    max-width: 300px;
-    width: 25%;
-    min-width: 250px;
-    min-height: 480px;
-    height: 55vh;
+    width: 45%;
     position: relative;
     margin-bottom: 20px;
-    border-radius: 10px;
     background-color: #DEAB3C;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .Projects .Project-Card .Card-Image{
-    height: 45%;
+    width: 50%;
 }
 
 .Projects .Project-Card .Card-Image img{
     width: 100%;
     height: 100%;
-    border-radius: 10px 10px 0 0;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
 .Projects .Card-Content{
-    height: 50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    box-sizing: border-box;
+}
+
+.Projects .Project-Card .Card-Content .Title{
+    height: 10%;
 }
 
 .Projects .Project-Card .Card-Content .Title h1{
@@ -66,26 +65,41 @@
 
 }
 
+.Projects .Project-Card .Card-Content .Description{
+    height: 60%;
+}
+
 .Projects .Project-Card .Card-Content .Description p{
-    margin: 0;
-    line-clamp: 4;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    text-align: justify;
+    margin: 15px 0;
+    /* text-indent: 40px; */
+    white-space: pre-line;
 }
 
 .Projects .Project-Card .Card-Content .Tools{
+    height: 20%;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    /* align-items: center; */
     justify-content: center;
+    flex-wrap: wrap;   
+}
+
+.Tools .Tool{
+
+    margin: 0;
+}
+
+.Projects .Project-Card .Card-Content .Tools p{
+    margin: 10px 5px;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .Projects  .Project-Card .Card-Content .Links{
-   display: flex;
-   gap: 20px; 
+    height: 10%;
+    display: flex;
+    gap: 20px; 
 }
 
 .Projects .Project-Card .Card-Content .Links a{
@@ -100,3 +114,43 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+
+@media (max-width: 1080px){
+    .Projects .Project-Card{
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .Projects .Project-Card .Card-Image{
+        width: 100%;
+    }
+    
+    .Projects .Project-Card .Card-Content{
+        width: 100%;
+    }
+    
+    .Card-Content .Title{
+        height: 10%;
+    }
+
+    .Projects .Project-Card .Card-Content .Description{
+        height: 70%;
+    }
+
+    .Card-Content .Tools{
+        height: 10%;
+    }
+
+    .Card-Content .Tools .Tool{
+        width: 45%;
+    }
+
+    .Card-Content .Links{
+        height: 10%;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    
+}
