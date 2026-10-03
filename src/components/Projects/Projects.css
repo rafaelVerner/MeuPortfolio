@@ -31,7 +31,8 @@
     width: 45%;
     position: relative;
     margin-bottom: 20px;
-    background-color: #DEAB3C;
+    background-color: #37323E;
+    color: #EBEAEB;
     display: flex;
     flex-direction: row;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -39,6 +40,7 @@
 
 .Projects .Project-Card .Card-Image{
     width: 50%;
+    
 }
 
 .Projects .Project-Card .Card-Image img{
@@ -58,11 +60,14 @@
 
 .Projects .Project-Card .Card-Content .Title{
     height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Projects .Project-Card .Card-Content .Title h1{
     font-size: 1.4rem;
-
+    border-bottom: 2px solid #DEAB3C;
 }
 
 .Projects .Project-Card .Card-Content .Description{
@@ -70,9 +75,9 @@
 }
 
 .Projects .Project-Card .Card-Content .Description p{
+    text-indent: 20px;
     text-align: justify;
     margin: 15px 0;
-    /* text-indent: 40px; */
     white-space: pre-line;
 }
 
@@ -86,7 +91,7 @@
 }
 
 .Tools .Tool{
-
+    text-align: center;
     margin: 0;
 }
 
@@ -106,7 +111,6 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-    width: 100px;
     background-color: #EBEAEB;
     padding: 10px 20px;
     text-align: center;
@@ -117,7 +121,7 @@
 
 @media (max-width: 1080px){
     .Projects .Project-Card{
-        width: 60%;
+        width: 90%;
         flex-direction: column;
     }
 
@@ -139,13 +143,14 @@
 
     .Card-Content .Tools{
         height: 10%;
+        justify-content: center;
     }
 
     .Card-Content .Tools .Tool{
-        width: 45%;
+        width: 40%;
     }
 
-    .Card-Content .Links{
+    .Projects .Project-Card .Card-Content .Links{
         height: 10%;
         align-items: center;
         justify-content: center;
