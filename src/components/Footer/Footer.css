@@ -17,7 +17,6 @@ footer .Info-Row{
 
 }
 
-
 footer .Info-Row .Navigation,  .Contacts{
   display: flex;
   flex-direction: column;
@@ -44,7 +43,9 @@ footer a{
 
 @media (max-width: 1080px){
   footer .Info-Row{
-    gap: 20px;
+    gap: 30px;
     flex-direction: column;
+    justify-content: center;
   }
+ 
 }

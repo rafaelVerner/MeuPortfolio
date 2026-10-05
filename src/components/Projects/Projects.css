@@ -109,13 +109,18 @@
 
 .Projects .Project-Card .Card-Content .Links a{
     text-decoration: none;
-    color: black;
+    color: #EBEAEB  ;
     font-weight: bold;
-    background-color: #EBEAEB;
     padding: 10px 20px;
     text-align: center;
-    border-radius: 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #DEAB3C;
+    transition: background-color 0.4s ease;
+    
+}
+
+.Projects .Project-Card .Card-Content .Links a:hover{
+    background-color: #DEAB3C;
+    transition: background-color 0.4s ease;
 }
 
 

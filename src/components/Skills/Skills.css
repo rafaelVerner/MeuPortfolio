@@ -116,17 +116,43 @@
     .Skills .Header{
         margin-top: 90px;
     }
-    .Skills-List{
-        width: 40%;
-    }
-    .Skills-List .List-Header h1{
-        font-size: 3rem;
+    .Containers{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .Skills-Container{
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 50px;
-        margin-top: 10px;
+        width: 100%;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 50px;
+    }
+    .Skills-Container .Skill-Button{
+        flex: 1;
+        height: 60px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .Skills-Container .Skill-Button h1{
+        font-size: 1.2rem;
+    }
+    .List-Container{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        
+    }
+    .List-Container .Item-List{
+       width: 90%;
+       display: flex;
+       justify-content: center;
+    }
+    .List-Container .Item-List .Item-Card{
+        font-size: 1.2rem;
+        width: 40%;
     }
 
 }

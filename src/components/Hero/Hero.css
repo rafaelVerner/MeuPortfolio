@@ -23,10 +23,11 @@
 .Hero .Content {
     position: relative;
     z-index: 10;
+    width: 70%;
 }
 
 .Hero .Description {
-    max-width: 50vw;
+    max-width: 90%;
 }
 
 .Hero .Content a{
@@ -68,13 +69,21 @@
 }
 
 @media (max-width: 1080px){
-    .Hero h1{
-        font-size: 5rem;
+    .Hero{
+        padding: 0 20px;
     }
-    .Hero h3{
-        font-size: 1.5rem;
+    .Hero .Content{
+        width: 100%;
     }
-    .Hero h4{
+
+    .Hero .Content h1{
+        font-size: 3.5rem;
+        width: 100%;
+    }
+    .Hero .Content h3{
+        font-size: 1rem;
+    }
+    .Hero .Content h4{
         font-size: 1rem;
     }
 
