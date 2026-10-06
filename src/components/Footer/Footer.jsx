@@ -17,9 +17,9 @@ function Footer(){
                 </div>
                 <div className="Contacts">
                     <h3>Contatos</h3>
-                    <a href="#">Gmail</a>
-                    <a href="#">GitHub</a>
-                    <a href="#">Linkedin</a>
+                    <a href="mailto:vernerrrferreira@gmail.com">Gmail</a>
+                    <a href="https://github.com/rafaelVerner" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/verner-rafael-rios-ferreira-762485239" target="_blank" rel="noopener noreferrer">Linkedin</a>
                 </div>
             </div>
             <div className="Copyright">
