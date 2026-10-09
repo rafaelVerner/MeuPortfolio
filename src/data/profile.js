@@ -4,7 +4,7 @@ export const profileData = {
     descricao: "Desenvolvedor Full-Stack focado em criar experiências digitais únicas.",
     sobre: {
         title: "Sobre mim",
-        content: "\tOlá, meu nome é Verner Rafael. \n\nSou um desenvolvedor que gosta do desafio de escrever código e criar softwares.\n\nEstou sempre em busca de aprimorar minhas habilidades e aprender mais sobre o universo da programação. Atualmente tenho como foco o estudos em tecnologias web, como React e Node.js.\n\nAlém disso, tenho interesse em outras áreas da tecnologia, como inteligência artificial, redes de computadores, desenvolvimento de jogos e cybersegurança.\n\nAqui estáo algumas ferramentas que utilizo para desenvolver projetos: \n\n"
+        content: "\tOlá, meu nome é Verner Rafael. \n\nSou um desenvolvedor que gosta do desafio de escrever código e criar softwares.\n\nEstou sempre em busca de aprimorar minhas habilidades e aprender mais sobre o universo da programação. Atualmente tenho como foco o estudos em tecnologias web, como React e Node.js.\n\nAlém disso, tenho interesse em outras áreas da tecnologia, como inteligência artificial, redes de computadores, desenvolvimento de jogos e cybersegurança."
     },
     experiencia:{
         title: "Experiência",
