@@ -230,6 +230,9 @@
         align-items: center;
     }
 
+    .About .Experiencias .Exp-Cards{
+        width: 90%;
+    }
 
     .About .Formacao .For-Cards{
         width: 90%;
