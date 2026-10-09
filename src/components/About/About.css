@@ -83,7 +83,7 @@
 .About .Experiencias .Exp-Cards{
     width: 30%;
     display: flex;
-    gap: 10%;
+    gap: 10;
     position: relative;
     flex-direction: column;
 }
