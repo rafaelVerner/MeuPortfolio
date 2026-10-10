@@ -1,4 +1,5 @@
 .About{
+    /* width: 100%; */
     min-height: 100vh;
     position: relative;
     background-color: #EBEAEB;
@@ -21,7 +22,6 @@
     width: 90%;
     border-radius: 50%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    /* border: 4px solid #DEAB3C; */
     aspect-ratio: 1/1;
     object-fit: cover
 }
@@ -211,7 +211,7 @@
 @media (max-width: 1080px){
     .About{
         flex-direction: column;
-        /* padding: 10px; */
+        
     }
     .About .Card-Image{
         margin-bottom: 50px;
