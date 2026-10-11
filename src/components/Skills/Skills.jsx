@@ -51,6 +51,9 @@ function Skills() {
                    
                 </div>
             </div>
+            <div className="Button-Curriculo">
+                <a href="https://drive.google.com/file/d/1Pwxllr2U_E0Nms8_BAjUVmcFb5O_UCtD/view?usp=sharing" target="_blank" rel="noopener noreferrer">Ver Currículo</a>
+            </div>
         </div>
     );
 }

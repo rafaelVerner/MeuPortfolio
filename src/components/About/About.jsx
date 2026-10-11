@@ -12,6 +12,24 @@ function About() {
                 <div className="Sobre">
                     <p>{profileData.sobre.content}</p>
                 </div>
+                <div className="Formacao">
+                    <div className="For-Header">
+                        <h3>{profileData.formacao.title}</h3>
+                    </div>
+                    <div className="For-Cards">
+                        {profileData.formacao.content.map((item, index)=>{
+                                    return(
+                                        <div className='For-Content'  key={index}>
+                                            <h4>{item.curso}</h4>
+                                            <p>{item.intituicao}</p>
+                                            <p>{item.periodo}</p>
+                                        </div>
+                                    );
+                                }
+                            )
+                        }
+                    </div>
+                </div>
                 <div className="Experiencias">
                     <div className="Exp-Header">
                         <h3>{profileData.experiencia.title}</h3>
@@ -32,24 +50,7 @@ function About() {
                     </div>
 
                 </div>
-                <div className="Formacao">
-                    <div className="For-Header">
-                        <h3>{profileData.formacao.title}</h3>
-                    </div>
-                    <div className="For-Cards">
-                        {profileData.formacao.content.map((item, index)=>{
-                                    return(
-                                        <div className='For-Content'  key={index}>
-                                            <h4>{item.curso}</h4>
-                                            <p>{item.intituicao}</p>
-                                            <p>{item.periodo}</p>
-                                        </div>
-                                    );
-                                }
-                            )
-                        }
-                    </div>
-                </div>
+                
             </div>
             <div className="Card-Image">
                 <img src={myImage} alt="Minha imagem segurando um robozinho." />

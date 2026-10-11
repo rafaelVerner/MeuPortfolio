@@ -34,8 +34,8 @@ function Projects() {
                                         {project.Links.map((link, index) => {
                                             return (
                                             <div className="Link" key={index}>  
-                                                <a href={link.url} target={"_parent"}>
-                                                    {link.name}
+                                                <a href={link.url} target={"_blank"} >
+                                                    Saiba mais
                                                 </a>
                                             </div>);
                                         })}
