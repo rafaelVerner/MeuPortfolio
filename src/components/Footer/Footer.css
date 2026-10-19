@@ -43,6 +43,7 @@ footer a{
 
 @media (max-width: 1080px){
   footer .Info-Row{
+    width: 90%;
     gap: 30px;
     flex-direction: column;
     justify-content: center;

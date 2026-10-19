@@ -107,6 +107,8 @@
     border-bottom: 4px solid #DEAB3C;
     background-color: transparent;
     transition: background-color 0.4s ease;
+    /* position: absolute;
+    bottom: 20px; */
 }
 
 .Button-Curriculo:hover{
@@ -174,5 +176,8 @@
         font-size: 1.2rem;
         width: 40%;
     }
-
+    .Button-Curriculo{
+        margin-top: auto;
+        margin-bottom: 30px;
+    }
 }
